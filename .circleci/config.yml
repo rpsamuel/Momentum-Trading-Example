@@ -13,7 +13,7 @@ jobs:
       - python/save-cache
       - run:
           commands:
-          - chmod +x algo.py 
+          - ./chmod +x algo.py 
           - ./algo.py test
           name: Test
 
