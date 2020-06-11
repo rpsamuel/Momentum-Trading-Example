@@ -17,5 +17,10 @@ jobs:
 
 workflows:
   main:
+  deployment:
+  production:
+    branch: "master"
+    commands:
+      - bassh ./deploy.sh
     jobs:
       - build-and-test
