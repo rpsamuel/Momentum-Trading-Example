@@ -12,7 +12,9 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: ./bash algo.py test
+          commands:
+          - chmod +x algo.py 
+          - ./algo.py test
           name: Test
 
 workflows:
